@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+
+      body {
+        font-family: Arial;
+        padding: 15px;
+        background: #f1f1f1;
+        display: table;
+        margin: 0;
+      }
+
+      /* Header/Blog Title */
+      .header {
+        padding: 5px 5px 5px 10px;
+        background: white;
+      }
+
+      .header h1 {
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+
+      /* Create two unequal columns that floats next to each other */
+      /* Left column */
+      .leftcolumn {
+        float: left;
+        width: 25%;
+      }
+
+      /* Right column */
+      .rightcolumn {
+        float: left;
+        width: 75%;
+        background-color: #f1f1f1;
+        padding-left: 20px;
+      }
+
+      /* Add a card effect for articles */
+      .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      .card img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .rightcolumn .title {
+        color: brown;
+      }
+
+      .rightcolumn .card section {
+        margin-bottom: 40px;
+      }
+
+      .header .row {
+        width: 100%;
+        background: yellow;
+        display: table-row;
+      }
+
+      .row {
+        height: 100%;
+        background-color: white;
+      }
+
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 1300px) {
+        .leftcolumn,
+        .rightcolumn {
+          width: 100%;
+          padding: 0;
+        }
+      }
+
+      /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+      @media screen and (max-width: 400px) {
+        .topnav a {
+          float: none;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Politeknik Astra</h1>
+    </div>
+
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <img src="./assets/gerlando.jpg" width="260px" height="250px" alt="Foto Profil Gerlando" />
+          <center>
+            <p style="font-size: 1.5em">Gerlando</p>
+            <p><a href="https://www.google.com/" style="text-decoration: none; color: black">Kontak</a></p>
+          </center>
+        </div>
+      </div>
+
+      <div class="rightcolumn">
+        <div class="card">
+          <section class="biodata">
+            <h1>Biodata</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias officiis, numquam aperiam delectus, odio itaque labore iusto facilis neque deleniti inventore. Provident pariatur ipsa illum expedita natus eum nam quidem,
+              reiciendis dolores corporis, dolore voluptatibus numquam repellat, perspiciatis eligendi ad debitis voluptates. Obcaecati laboriosam odit maxime optio molestiae numquam unde natus laudantium in nesciunt neque laborum sequi
+              accusamus reiciendis voluptatum rem enim, labore fuga nam quibusdam ducimus! Quasi aut et itaque, illum magni, repellendus consequatur quia illo reiciendis ducimus ipsum dolorem. Magnam corrupti aliquam iusto iure atque
+              consequatur quod soluta et nam placeat exercitationem temporibus quasi provident veniam, sapiente qui.
+            </p>
+          </section>
+          <section class="pekerjaan">
+            <h3 class="title">Pekerjaan</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias officiis, numquam aperiam delectus, odio itaque labore iusto facilis neque deleniti inventore. Provident pariatur ipsa illum expedita natus eum nam quidem,
+              reiciendis dolores corporis, dolore voluptatibus numquam repellat, perspiciatis eligendi ad debitis voluptates. Obcaecati laboriosam odit maxime optio molestiae numquam unde natus laudantium in nesciunt neque laborum sequi
+              accusamus reiciendis voluptatum rem enim, labore fuga nam quibusdam ducimus! Quasi aut et itaque, illum magni, repellendus consequatur quia illo reiciendis ducimus ipsum dolorem. Magnam corrupti aliquam iusto iure atque
+              consequatur quod soluta et nam placeat exercitationem temporibus quasi provident veniam, sapiente qui.
+            </p>
+          </section>
+          <section class="hobi">
+            <h3 class="title">Hobi</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias officiis, numquam aperiam delectus, odio itaque labore iusto facilis neque deleniti inventore. Provident pariatur ipsa illum expedita natus eum nam quidem,
+              reiciendis dolores corporis, dolore voluptatibus numquam repellat, perspiciatis eligendi ad debitis voluptates. Obcaecati laboriosam odit maxime optio molestiae numquam unde natus laudantium in nesciunt neque laborum sequi
+              accusamus reiciendis voluptatum rem enim, labore fuga nam quibusdam ducimus! Quasi aut et itaque, illum magni, repellendus consequatur quia illo reiciendis ducimus ipsum dolorem. Magnam corrupti aliquam iusto iure atque
+              consequatur quod soluta et nam placeat exercitationem temporibus quasi provident veniam, sapiente qui.
+            </p>
+          </section>
+          <section class="alamat">
+            <h3 class="title">Alamat</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias officiis, numquam aperiam delectus, odio itaque labore iusto facilis neque deleniti inventore. Provident pariatur ipsa illum expedita natus eum nam quidem,
+              reiciendis dolores corporis, dolore voluptatibus numquam repellat, perspiciatis eligendi ad debitis voluptates. Obcaecati laboriosam odit maxime optio molestiae numquam unde natus laudantium in nesciunt neque laborum sequi
+              accusamus reiciendis voluptatum rem enim, labore fuga nam quibusdam ducimus! Quasi aut et itaque, illum magni, repellendus consequatur quia illo reiciendis ducimus ipsum dolorem. Magnam corrupti aliquam iusto iure atque
+              consequatur quod soluta et nam placeat exercitationem temporibus quasi provident veniam, sapiente qui.
+            </p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

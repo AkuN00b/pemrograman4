@@ -1,0 +1,29 @@
+/* INI ID SELECTOR */
+#gayaID {
+  background-color: red;
+  color: white;
+}
+
+/* INI CLASS SELECTOR */
+.gayaClass {
+  background-color: red;
+  color: white;
+}
+
+/* INI ELEMENT SELECTOR */
+h1 {
+  background-color: red;
+  color: white;
+}
+
+/* UNIVERSAL SELECTOR */
+* {
+  font-size: 1em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.classDivSaya {
+  background-color: #ccc;
+  margin-bottom: 5px;
+  padding: 4px;
+}
