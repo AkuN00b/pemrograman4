@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulir</title>
+  </head>
+  <body>
+    <h3>Formulir PRG 4</h3>
+    <p>Ini adalah formulir pendaftaran PRG4</p>
+    <hr />
+
+    <form action="https://www.google.com/" method="post">
+      <h3>Nama</h3>
+      <input type="text" name="txtNama" id="txtNama" />
+
+      <h3>Alamat</h3>
+      <textarea id="txtAlamat" name="txtAlamat" rows="3"></textarea>
+
+      <h3>Prodi</h3>
+      <select name="selProdi" id="selProdi">
+        <option value="MI">-- PILIH PRODI --</option>
+        <option value="MI">Manajemen Informatika</option>
+        <option value="MK">Mekatronika</option>
+        <option value="MO">Mesin Otomotif</option>
+      </select>
+
+      <h3>Hobi</h3>
+      <input type="checkbox" name="chHobiMembaca" id="chHobiMembaca" value="Membaca" /> <label for="">Membaca</label> <br />
+      <input type="checkbox" name="chHobiMakan" id="chHobiMakan" value="Makan" /> <label for="">Makan</label> <br />
+      <input type="checkbox" name="chHobiOlahraga" id="chHobiOlahraga" value="Olahraga" /> <label for="">Olahraga</label> <br />
+
+      <h3>Jenis Kelamin</h3>
+      <input type="radio" name="radioJK" value="Laki-Laki" id="radioLaki" /> <label for="">Laki-Laki</label> <br />
+      <input type="radio" name="radioJK" value="Laki-Laki" id="radioPerempuan" /> <label for="">Perempuan</label>
+
+      <br />
+      <br />
+
+      <form action=""></form>
+
+      <input type="submit" value="Kirim" id="btnKirim" />
+    </form>
+  </body>
+</html>
